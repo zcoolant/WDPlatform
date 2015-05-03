@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WDPlatform", "SignalRwithAngular\WDPlatform.csproj", "{C5ED1697-6DF2-44FB-ACBE-78FBC56440FE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WDPlatform", "WDPlatform\WDPlatform.csproj", "{C5ED1697-6DF2-44FB-ACBE-78FBC56440FE}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{4151A3E4-38E7-49CB-9865-528F13C09A86}"
 	ProjectSection(SolutionItems) = preProject
