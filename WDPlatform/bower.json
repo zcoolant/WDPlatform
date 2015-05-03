@@ -4,7 +4,6 @@
   "authors": [
     "Tong Zhao <zhaotong116@gmail.com>"
   ],
-  "private": true,
   "ignore": [
     "**/.*",
     "node_modules",
