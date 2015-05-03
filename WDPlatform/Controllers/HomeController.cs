@@ -8,7 +8,13 @@ namespace WDPlatform.Controllers
 {
     public class HomeController : Controller
     {
-        // GET: Home
+        // GET: TestChat
+        public ActionResult TestChat()
+        {
+            return View();
+        }
+
+        // GET: Index
         public ActionResult Index()
         {
             return View();
