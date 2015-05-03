@@ -1,8 +1,8 @@
 ﻿using Microsoft.Owin;
 using Owin;
 
-[assembly: OwinStartupAttribute(typeof(SignalRwithAngular.Startup))]
-namespace SignalRwithAngular
+[assembly: OwinStartupAttribute(typeof(WDPlatform.Startup))]
+namespace WDPlatform
 {
     public partial class Startup
     {

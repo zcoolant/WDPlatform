@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNet.SignalR;
 
-namespace SignalRwithAngular.Hubs
+namespace WDPlatform.Hubs
 {
     public class MessageHub : Hub
     {

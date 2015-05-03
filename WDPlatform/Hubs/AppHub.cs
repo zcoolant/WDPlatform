@@ -5,7 +5,7 @@ using System.Web;
 using Microsoft.AspNet.SignalR;
 
 
-namespace SignalRwithAngular.Hubs
+namespace WDPlatform.Hubs
 {
 
     public class AppHub : Hub

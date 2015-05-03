@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 
 
-namespace SignalRwithAngular
+namespace WDPlatform
 {
     public class Users
     {
