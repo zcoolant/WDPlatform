@@ -5,25 +5,23 @@ namespace WDPlatform
 {
     public class BundleConfig
     {
-        // For more information on bundling, visit http://go.microsoft.com/fwlink/?LinkId=301862
         public static void RegisterBundles(BundleCollection bundles)
         {
-            bundles.Add(new StyleBundle("~/css/app").Include(
+            bundles.Add(new StyleBundle("~/css/main").Include(
                     "~/assets/vendor/bootstrap/dist/css/bootstrap.css",
                     "~/assets/css/app.css")
             );
 
-
             bundles.Add(new ScriptBundle("~/js/vendor").Include(
                     "~/assets/vendor/jquery/jquery.js",
-                    "~/assets/vendor/signalr/jquery.signalR.js",
-                    "~/assets/vendor/angular/angular.js")
+                    "~/assets/vendor/bootstrap/dist/js/bootstrap.min.js",
+                    "~/assets/vendor/angular/angular.js",
+                    "~/app/app.js")
             );
 
 
-            bundles.Add(new ScriptBundle("~/js/app").Include(
-                    "~/app/app.js"
-                )
+            bundles.Add(new ScriptBundle("~/js/app")
+                .Include("~/assets/vendor/signalr/jquery.signalR.js")
                 .IncludeDirectory("~/app/common", "*.js")
                 .IncludeDirectory("~/app/controllers", "*.js")
                 .IncludeDirectory("~/app/services", "*.js")
