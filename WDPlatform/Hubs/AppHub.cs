@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using Microsoft.AspNet.SignalR;
+using WDPlatform.Controllers;
 
 
 namespace WDPlatform.Hubs
@@ -11,6 +12,8 @@ namespace WDPlatform.Hubs
     public class AppHub : Hub
     {
         private Users connectedUsers = Users.Instance;
+        private Random r = new Random();
+        public static object joinLock = new object();
         
         public int GetUserCount() {
             Clients.Others.sendUserCount(connectedUsers.Count());
@@ -30,7 +33,41 @@ namespace WDPlatform.Hubs
             return base.OnDisconnected(stopCalled);
         }
 
+        public override System.Threading.Tasks.Task OnReconnected()
+        {
+            return base.OnReconnected();
+        }
 
+        public long CreateRoom()
+        {
+            long randomNumber =  r.Next(9999);
+            Game game = new Game(randomNumber);
+            game.creater = Context.ConnectionId;
+            game.players.Add(Context.ConnectionId);
+            GameUtils.currentGames.Add(randomNumber, game);
+            return randomNumber;
+        }
+
+        public string JoinRoom(long roomNumber)
+        {
+            lock (joinLock)
+            {
+                if (GameUtils.currentGames.ContainsKey(roomNumber))
+                {
+                    Game game = GameUtils.currentGames[roomNumber];
+                    game.players.Add(Context.ConnectionId);
+                    foreach(string id in game.players){
+                        Clients.Client(id).refreshGame(game);
+                    }
+                    return "ok";
+                }
+                else
+                {
+                    return "fail";
+                }
+            }
+            
+        }
 
 
     }

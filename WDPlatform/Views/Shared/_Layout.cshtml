@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width" />
     @Styles.Render("~/css/main")
     @Scripts.Render("~/js/vendor")
+    @Scripts.Render("~/js/app")
 </head>
 <body>
     <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -29,7 +30,6 @@
             </div><!--/.nav-collapse -->
         </div>
     </nav>
-    <div class="container">@RenderBody()
-    </div>
+    <div class="container">@RenderBody()</div>
 </body>
 </html>

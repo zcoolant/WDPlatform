@@ -19,5 +19,12 @@ namespace WDPlatform.Controllers
         {
             return View();
         }
+
+
+        // GET: Join room
+        public ActionResult Game(int number)
+        {
+            return View(number);
+        }
     }
 }

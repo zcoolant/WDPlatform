@@ -11,14 +11,18 @@
 	 * 
 	 * @param {AppHub}
 	 */
-	AppController.$inject = ['AppHub'];
-	function AppController(AppHub) {
+	AppController.$inject = ['AppHub', '$http'];
+	function AppController(AppHub, $location) {
 
 		// Internal reference
 		var self = this;
 
 		// user count property we'll expose to the view
 		this.usersOnline = 0;
+
+		this.roomNumber;
+		this.openGame = false;
+		this.joinRoomNumber;
 
 		// Connection status property we'll expose to the view
 		this.connectionStatus = AppHub.connectionStatus;
@@ -29,6 +33,22 @@
 		function updateCount(count) {
 			self.usersOnline = count;
 		}
+
+		this.create = function () {
+            AppHub.invoke('createRoom').then(function (roomNumber) {
+                console.log('Room Create successfully');
+                self.roomNumber = roomNumber;
+                self.openGame = true;
+		    })
+		};
+
+		this.join = function () {
+		    AppHub.invoke('joinRoom').then(function (roomNumber) {
+		        console.log('Room Create successfully');
+		        self.roomNumber = roomNumber;
+		        self.openGame = true;
+		    })
+		};
 
 		// Receive the sendUserCount event from the AppHub
 		AppHub.on('sendUserCount', updateCount);
