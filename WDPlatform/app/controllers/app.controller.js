@@ -21,8 +21,10 @@
 		this.usersOnline = 0;
 
 		this.roomNumber;
+		this.userName;
 		this.openGame = false;
-		this.joinRoomNumber;
+		this.game = {};
+		this.players = [];
 
 		// Connection status property we'll expose to the view
 		this.connectionStatus = AppHub.connectionStatus;
@@ -35,7 +37,7 @@
 		}
 
 		this.create = function () {
-            AppHub.invoke('createRoom').then(function (roomNumber) {
+		    AppHub.invoke('createRoom', this.userName).then(function (roomNumber) {
                 console.log('Room Create successfully');
                 self.roomNumber = roomNumber;
                 self.openGame = true;
@@ -43,12 +45,19 @@
 		};
 
 		this.join = function () {
-		    AppHub.invoke('joinRoom').then(function (roomNumber) {
+		    AppHub.invoke('joinRoom', this.roomNumber, this.userName).then(function (roomNumber) {
 		        console.log('Room Create successfully');
-		        self.roomNumber = roomNumber;
 		        self.openGame = true;
 		    })
 		};
+
+		AppHub.on('refreshGame', getNewUser)
+
+		function getNewUser(game) {
+		    self.game = game;
+		    console.log(self.game);
+		    self.players = Object.keys(game.players);
+		}
 
 		// Receive the sendUserCount event from the AppHub
 		AppHub.on('sendUserCount', updateCount);

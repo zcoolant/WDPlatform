@@ -38,25 +38,25 @@ namespace WDPlatform.Hubs
             return base.OnReconnected();
         }
 
-        public long CreateRoom()
+        public long CreateRoom(string userName)
         {
             long randomNumber =  r.Next(9999);
             Game game = new Game(randomNumber);
-            game.creater = Context.ConnectionId;
-            game.players.Add(Context.ConnectionId);
+            game.creater = userName;
+            game.createrIds.Add(Context.ConnectionId);
             GameUtils.currentGames.Add(randomNumber, game);
             return randomNumber;
         }
 
-        public string JoinRoom(long roomNumber)
+        public string JoinRoom(long roomNumber, string userName)
         {
             lock (joinLock)
             {
                 if (GameUtils.currentGames.ContainsKey(roomNumber))
                 {
                     Game game = GameUtils.currentGames[roomNumber];
-                    game.players.Add(Context.ConnectionId);
-                    foreach(string id in game.players){
+                    game.players[userName] = Context.ConnectionId;
+                    foreach(string id in game.players.Values){
                         Clients.Client(id).refreshGame(game);
                     }
                     return "ok";

@@ -4,23 +4,25 @@
 
 <div>
     <div class="row">
-        <div class="col-lg-offset-4">
-            <button ng-click="appCtrl.create()" class="btn btn-lg btn-default">Create Game</button>
-        </div>
-        <div class="col-lg-4">
-            <div class="input-group input-group-lg">
-                <input type="text" class="form-control" ng-model="appCtrl.joinRoomNumber" placeholder="Room Number">
-                <span class="input-group-btn">
-                    <button class="btn btn-default" ng-click="appCtrl.join()">Join Game</button>
-                </span>
-            </div><!-- /input-group -->
-        </div>
-        <div class="col-lg-2">
-            <a href="~/Home/TestChat" class="btn btn-lg  btn-default">Test Chat</a>
-        </div>
+        <button ng-click="appCtrl.create()" class="btn btn-lg btn-default">Create Game</button>
+        <button class="btn btn-lg btn-default" ng-click="appCtrl.join()">Join Game</button>
+        <button href="~/Home/TestChat" class="btn btn-lg  btn-default">Test Chat</button>   
+    </div>
+    <div class="form-group">
+        <input type="text" class="form-control" ng-model="appCtrl.roomNumber" placeholder="Room Number">
+        <input type="text" class="form-control" ng-model="appCtrl.userName" placeholder="Your Name">
     </div>
 </div>
 
 <div ng-show="appCtrl.openGame">
     <h1>Room {{appCtrl.roomNumber}}</h1>
+    <h1>Players</h1>
+    <div ng-repeat="(userName, id) in appCtrl.players">
+
+        <div>
+            <span>{{$index+1}}. </span>
+            <strong>{{id}} </strong>
+            <span class="name">{{userName}} </span>
+        </div>
+    </div>
 </div>

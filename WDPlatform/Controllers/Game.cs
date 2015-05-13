@@ -10,14 +10,16 @@ namespace WDPlatform.Controllers
         readonly long GameNumber;
         public Game(long number) {
             GameNumber = number;
-            players = new List<string>();
+            players = new Dictionary<string,string>();
+            createrIds = new List<string>();
         }
 
         public long getGameNumber() {
             return GameNumber;
         }
-        public List<string> players { get; set; }
+        public Dictionary<string,string> players { get; set; }
         public string creater { get; set; }
+        public List<string> createrIds {get;set;}
         public GameStatus status { get; set; }
     }
 
