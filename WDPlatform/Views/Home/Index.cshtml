@@ -25,4 +25,20 @@
             <span class="name">{{userName}} </span>
         </div>
     </div>
+
+    <div class="btn btn-primary" data-drag="true" data-jqyoui-options="{revert: 'invalid'}" ng-model="appCtrl.list1" jqyoui-draggable="{animate:true}" ng-hide="!appCtrl.list1.title">{{appCtrl.list1.title}}</div>
+    <div class="thumbnail" data-drop="true" data-jqyoui-options ng-model="appCtrl.list2" jqyoui-droppable style='height:50px;'>
+        <div class="btn btn-success" data-drag="false" data-jqyoui-options ng-model="appCtrl.list2" jqyoui-draggable ng-hide="!appCtrl.list2.title">{{appCtrl.list2.title}}</div>
+    </div>
+
+    <div class="thumbnail" data-drop="true" ng-model='appCtrl.list5' data-jqyoui-options="optionsList5" jqyoui-droppable="{multiple:true}">
+        <div class="caption">
+            <div class="btn btn-info btn-draggable" ng-repeat="item in appCtrl.list5" ng-show="item.title" data-drag="{{item.drag}}" data-jqyoui-options="{revert: 'invalid'}" ng-model="appCtrl.list5" jqyoui-draggable="{index: {{$index}},animate:true}">{{item.title}}</div>
+        </div>
+    </div>
+    <div class="thumbnail" data-drop="true" ng-model='appCtrl.list4' data-jqyoui-options="optionsList4" jqyoui-droppable="{multiple:true}">
+        <div class="caption">
+            <div class="btn btn-info btn-draggable" ng-repeat="item in appCtrl.list4" ng-show="item.title" data-drag="{{item.drag}}" data-jqyoui-options="{revert: 'invalid'}" ng-model="appCtrl.list4" jqyoui-draggable="{index: {{$index}},animate:true}">{{item.title}}</div>
+        </div>
+    </div>
 </div>

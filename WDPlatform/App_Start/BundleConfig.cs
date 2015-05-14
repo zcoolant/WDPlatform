@@ -9,6 +9,7 @@ namespace WDPlatform
         {
             bundles.Add(new StyleBundle("~/css/main").Include(
                     "~/assets/vendor/bootstrap/dist/css/bootstrap.css",
+                    "~/assets/css/jquery-ui.css",
                     "~/assets/css/app.css")
             );
 
@@ -16,12 +17,12 @@ namespace WDPlatform
                     "~/assets/vendor/jquery/jquery.js",
                     "~/assets/vendor/bootstrap/dist/js/bootstrap.min.js",
                     "~/assets/vendor/angular/angular.js",
-                    "~/app/app.js")
+                    "~/app/common/jquery-ui-1.9.2.min.js")
             );
 
 
             bundles.Add(new ScriptBundle("~/js/app")
-                .Include("~/assets/vendor/signalr/jquery.signalR.js")
+                .Include("~/assets/vendor/signalr/jquery.signalR.js", "~/app/app.js","~/app/directives/angular-dragdrop.min.js")
                 .IncludeDirectory("~/app/common", "*.js")
                 .IncludeDirectory("~/app/controllers", "*.js")
                 .IncludeDirectory("~/app/services", "*.js")

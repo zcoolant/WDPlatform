@@ -55,8 +55,9 @@ namespace WDPlatform.Hubs
                 if (GameUtils.currentGames.ContainsKey(roomNumber))
                 {
                     Game game = GameUtils.currentGames[roomNumber];
-                    game.players[userName] = Context.ConnectionId;
-                    foreach(string id in game.players.Values){
+                    game.playersId[userName] = Context.ConnectionId;
+                    game.playersScore[userName] = 0;
+                    foreach(string id in game.playersId.Values){
                         Clients.Client(id).refreshGame(game);
                     }
                     return "ok";
