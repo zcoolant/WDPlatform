@@ -22,9 +22,10 @@
 
 		this.roomNumber;
 		this.userName;
-		this.openGame = false;
-		this.game = {};
+		this.isCreater = false;
 		this.players = [];
+		this.cards = [];
+		this.question = "";
 
 		// Connection status property we'll expose to the view
 		this.connectionStatus = AppHub.connectionStatus;
@@ -40,22 +41,20 @@
 		    AppHub.invoke('createRoom', this.userName).then(function (roomNumber) {
                 console.log('Room Create successfully');
                 self.roomNumber = roomNumber;
-                self.openGame = true;
+                self.isCreater = true;
 		    })
 		};
 
 		this.join = function () {
 		    AppHub.invoke('joinRoom', this.roomNumber, this.userName).then(function (roomNumber) {
 		        console.log('Room Create successfully');
-		        self.openGame = true;
+		        self.isCreater = true;
 		    })
 		};
 
 		AppHub.on('refreshGame', getNewUser)
 
 		function getNewUser(game) {
-		    self.game = game;
-		    console.log(self.game);
 		    self.players = Object.keys(game.players);
 		}
 
@@ -67,6 +66,17 @@
 		//
 		AppHub.invoke('getUserCount').then(updateCount);
 
+		this.cards = [
+            { answer: 'The invisible hand' },
+            { answer: 'waiting until marriage' }
+		];
+
+		this.players = [
+            { name: 'Tong', socre: 0},
+            { name: 'Erin', score: 0}
+		];
+
+        this.question = "Instead of coal, Santa now gives the bad children ?"
 
 	}
 
