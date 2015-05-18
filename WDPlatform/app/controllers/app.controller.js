@@ -68,19 +68,6 @@
 		AppHub.invoke('getUserCount').then(updateCount);
 
 
-		this.list1 = { title: 'AngularJS - Drag Me' };
-		this.list2 = {};
-		this.list4 = [];
-		this.list5 = [
-    { 'title': 'Item 1', 'drag': true },
-    { 'title': 'Item 2', 'drag': true },
-    { 'title': 'Item 3', 'drag': true },
-    { 'title': 'Item 4', 'drag': true },
-    { 'title': 'Item 5', 'drag': true },
-    { 'title': 'Item 6', 'drag': true },
-    { 'title': 'Item 7', 'drag': true },
-    { 'title': 'Item 8', 'drag': true }
-		];
 	}
 
 	// Register the 'AppController' to the 'app' module.
