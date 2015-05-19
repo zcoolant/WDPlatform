@@ -30,5 +30,8 @@
   background: #b388ff; }
 .red {
   background: #ff8a80; }
+.black {
+  color:white;
+  background: #101010; }
 md-grid-tile {
   transition: all 400ms ease-out 50ms; }

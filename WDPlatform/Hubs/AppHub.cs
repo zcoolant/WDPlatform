@@ -38,6 +38,7 @@ namespace WDPlatform.Hubs
             return base.OnReconnected();
         }
 
+        //Create a room
         public long CreateRoom(string userName)
         {
             long randomNumber =  r.Next(9999);
@@ -48,6 +49,7 @@ namespace WDPlatform.Hubs
             return randomNumber;
         }
 
+        //Join a room
         public string JoinRoom(long roomNumber, string userName)
         {
             lock (joinLock)
@@ -55,11 +57,12 @@ namespace WDPlatform.Hubs
                 if (GameUtils.currentGames.ContainsKey(roomNumber))
                 {
                     Game game = GameUtils.currentGames[roomNumber];
-                    game.playersId[userName] = Context.ConnectionId;
-                    game.playersScore[userName] = 0;
-                    foreach(string id in game.playersId.Values){
-                        Clients.Client(id).refreshGame(game);
+                    game.addPlayer(userName, Context.ConnectionId);
+                    Dictionary<string, int> pscores = game.getScores();
+                    foreach(var player in game.players.Values){
+                        Clients.Clients(player.playerIds).refreshPlayers(pscores);
                     }
+                    Clients.Clients(game.createrIds).refreshPlayers(pscores);
                     return "ok";
                 }
                 else
@@ -68,6 +71,22 @@ namespace WDPlatform.Hubs
                 }
             }
             
+        }
+
+        //Start the game
+        public void StartGame(long roomNumber) { 
+           
+             Game game = GameUtils.currentGames[roomNumber];
+             if (game.createrIds.Contains(Context.ConnectionId)) {
+                 //This user is the creater
+                 game.reloadAll();
+                 foreach (var player in game.players.Values)
+                 {
+                     Clients.Clients(player.playerIds).reloadQuestion(game.question);
+                     Clients.Clients(player.playerIds).reloadCards(player.cards);
+                 }
+                 Clients.Clients(game.createrIds).reloadQuestion(game.question);
+             }
         }
 
 

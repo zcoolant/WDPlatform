@@ -1,42 +1,75 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
-
-<div>
-    <div class="row">
-        <button ng-click="appCtrl.create()" class="btn btn-lg btn-default">Create Game</button>
-        <button class="btn btn-lg btn-default" ng-click="appCtrl.join()">Join Game</button>
-        <button href="~/Home/TestChat" class="btn btn-lg  btn-default">Test Chat</button>   
-    </div>
-    <div class="form-group">
-        <input type="text" class="form-control" ng-model="appCtrl.roomNumber" placeholder="Room Number">
-        <input type="text" class="form-control" ng-model="appCtrl.userName" placeholder="Your Name">
+<div ng-show="!(appCtrl.isCreater || appCtrl.isPlayer)">
+    <div class="jumbotron">
+        <h1>WD Platform</h1>
+        <p class="lead">Create a game or join a existing one to start your PARTY!</p>
+        <form class="navbar-form navbar-left">
+            <div class="btn-group">
+                <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    Create <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a ng-click="appCtrl.create()" href="#">Cards Against Humanity</a></li>
+                </ul>
+            </div>
+            <div class="form-group">
+                <input placeholder="Room" ng-model="appCtrl.roomNumber" class="form-control">
+            </div>
+            <div class="form-group">
+                <input placeholder="UserName" ng-model="appCtrl.userName" class="form-control">
+            </div>
+            <button ng-click="appCtrl.join()" class="btn btn-success">Join</button>
+        </form>
     </div>
 </div>
 
-<div ng-show="appCtrl.isCreater">
-    <h1>Room {{appCtrl.roomNumber}}</h1>
-    <h1>Players</h1>
-
-    <md-grid-list md-cols-sm="1" md-cols-md="2" md-cols-gt-md="6"
+<div ng-show="(appCtrl.isCreater || (appCtrl.isPlayer && !(appCtrl.isStart)))">
+    <h1>Room {{appCtrl.roomNumber}} Players</h1>
+    <md-grid-list md-cols-sm="3" md-cols-md="5" md-cols-gt-md="6"
                   md-row-height-gt-md="1:1" md-row-height="2:2"
                   md-gutter="12px" md-gutter-gt-sm="8px">
-      
-        <md-grid-tile ng-repeat="player in appCtrl.players" class="green">
-           {{player.score}}
+
+        <md-grid-tile ng-repeat="(name, score) in appCtrl.players" class="green">
+            {{score}}
             <md-grid-tile-footer>
-                <h3>{{player.name}}</h3>
+                <h3>{{name}}</h3>
             </md-grid-tile-footer>
         </md-grid-tile>
     </md-grid-list>
-
-    <h1>Question: </h1>
-    <md-whiteframe class="md-whiteframe-z2"  style="height:200px; width:400px" layout>
-        <h2>{{appCtrl.question}}</h2>
-    </md-whiteframe>
 </div>
 
 <div ng-show="appCtrl.isCreater">
+    <div ng-show="!appCtrl.isStart">
+        <button ng-click="appCtrl.start()" class="btn btn-success">Start</button>
+    </div>
+    <div ng-show="appCtrl.isStart">
+        <h1>Question: </h1>
+        <md-grid-list md-cols-sm="2" md-cols-md="6" md-cols-gt-md="6"
+                      md-row-height-gt-md="1:1" md-row-height="2:2"
+                      md-gutter="12px" md-gutter-gt-sm="8px">
+
+            <md-grid-tile md-rowspan="1" md-colspan="3" md-colspan-sm="2" class="black">
+                <md-whiteframe class="md-whiteframe-z2" style="height:100%; width:100%">
+                    <h2>{{appCtrl.question}}</h2>
+                </md-whiteframe>
+            </md-grid-tile>
+            <md-grid-tile ng-repeat="card in appCtrl.cards">
+                <md-whiteframe class="md-whiteframe-z2" style="height:100%; width:100%">
+                    <h3>{{card}}</h3>
+                    <md-grid-tile-footer>
+                        <md-checkbox ng-model="data.cb1" aria-label="Checkbox 1">
+                            Select
+                        </md-checkbox>
+                    </md-grid-tile-footer>
+                </md-whiteframe>
+            </md-grid-tile>
+        </md-grid-list>
+    </div>
+</div>
+
+<div ng-show="appCtrl.isPlayer && appCtrl.isStart">
     <h1>Your cards</h1>
     <md-grid-list md-cols-sm="2" md-cols-md="6" md-cols-gt-md="6"
                   md-row-height-gt-md="1:1" md-row-height="2:2"
@@ -44,15 +77,13 @@
 
         <md-grid-tile ng-repeat="card in appCtrl.cards">
             <md-whiteframe class="md-whiteframe-z2" style="height:100%; width:100%">
-                <h3>{{card.answer}}</h3>
+                <h3>{{card}}</h3>
                 <md-grid-tile-footer>
                     <md-checkbox ng-model="data.cb1" aria-label="Checkbox 1">
                         Select
                     </md-checkbox>
                 </md-grid-tile-footer>
-
             </md-whiteframe>
-
         </md-grid-tile>
     </md-grid-list>
 </div>
