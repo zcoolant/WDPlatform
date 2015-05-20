@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Web.Script.Serialization;
 
 namespace WDPlatform.Controllers
 {
     public class Game
     {
-        private List<string> allCards;
         public int defaultCardNumberPerP = 10;
         readonly long RoomNumber;
         public Game(long roomNumber)
@@ -23,7 +23,8 @@ namespace WDPlatform.Controllers
         public string creater { get; set; }
         public List<string> createrIds { get; set; }
         public GameStatus status { get; set; }
-        public string question { get; set; }
+        public CardsAH cardsAH { get; set; }
+        public CardsAH.Card currentQuestion { get; set; }
 
         //Get this game's roomnumber
         public long getRoomNumber()
@@ -31,11 +32,25 @@ namespace WDPlatform.Controllers
             return RoomNumber;
         }
 
-        //reload for everyone to default number
-        public string reloadAll()
+        //Start this game
+        public void startGame()
         {
-            if (allCards == null) {
-                allCards = GameUtils.getCardsPack();
+            //load cardsAH
+            String json = GameUtils.getCardsJson();
+            JavaScriptSerializer jss = new JavaScriptSerializer();
+            CardsAH cah = jss.Deserialize<CardsAH>(json);
+            this.cardsAH = cah;
+
+            //Change status
+            status = GameStatus.STARTED;
+        }
+
+        //reload for everyone to default number
+        public void reloadAll()
+        {
+            if (cardsAH == null)
+            {
+                startGame();
             }
             foreach (Player player in players.Values)
             {
@@ -44,8 +59,27 @@ namespace WDPlatform.Controllers
                     player.cards.AddRange(draw(defaultCardNumberPerP - player.cards.Count));
                 }
             }
-            question = GameUtils.getNewQuestion();
-            return question;
+
+            currentQuestion = cardsAH.blackCards[0];
+            cardsAH.blackCards.RemoveAt(0);
+        }
+
+        //reload for specific user to default number
+        public void reload(string userName)
+        {
+            if (cardsAH == null)
+            {
+                startGame();
+            }
+            Player player = this.players[userName];
+
+            if (player.cards.Count < defaultCardNumberPerP)
+            {
+                player.cards.AddRange(draw(defaultCardNumberPerP - player.cards.Count));
+            }
+
+            currentQuestion = cardsAH.blackCards[0];
+            cardsAH.blackCards.RemoveAt(0);
         }
 
         //Add a player to current game's players
@@ -75,10 +109,10 @@ namespace WDPlatform.Controllers
         }
 
         //draw the top number of cards from allCards
-        private List<string> draw(int number)
+        private List<CardsAH.Card> draw(int number)
         {
-            List<string> result = allCards.GetRange(0, number);
-            allCards.RemoveRange(0, number);
+            List<CardsAH.Card> result = cardsAH.whiteCards.GetRange(0, number);
+            cardsAH.whiteCards.RemoveRange(0, number);
             return result;
         }
     }

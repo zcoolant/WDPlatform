@@ -59,8 +59,18 @@ namespace WDPlatform.Hubs
                     Game game = GameUtils.currentGames[roomNumber];
                     game.addPlayer(userName, Context.ConnectionId);
                     Dictionary<string, int> pscores = game.getScores();
-                    foreach(var player in game.players.Values){
-                        Clients.Clients(player.playerIds).refreshPlayers(pscores);
+                    if (game.status.Equals(GameStatus.STARTED)) {
+                        game.reload(userName);
+                        Clients.Clients(game.players[userName].playerIds).reloadQuestion(game.currentQuestion);
+                        Clients.Clients(game.players[userName].playerIds).reloadCards(game.players[userName].cards);
+                    }
+                    else
+                    {
+                        foreach (var player in game.players.Values)
+                        {
+                            Clients.Clients(player.playerIds).refreshPlayers(pscores);
+                        }
+
                     }
                     Clients.Clients(game.createrIds).refreshPlayers(pscores);
                     return "ok";
@@ -82,11 +92,18 @@ namespace WDPlatform.Hubs
                  game.reloadAll();
                  foreach (var player in game.players.Values)
                  {
-                     Clients.Clients(player.playerIds).reloadQuestion(game.question);
+                     Clients.Clients(player.playerIds).reloadQuestion(game.currentQuestion);
                      Clients.Clients(player.playerIds).reloadCards(player.cards);
                  }
-                 Clients.Clients(game.createrIds).reloadQuestion(game.question);
+                 Clients.Clients(game.createrIds).reloadQuestion(game.currentQuestion);
              }
+        }
+
+        public void SelecteCards(long roomNumber, string userName, List<string> selected) {
+            Game game = GameUtils.currentGames[roomNumber];
+            Player player = game.players[userName];
+            player.currentSelected.Add(selected);
+            Clients.Clients(game.createrIds).addSelected(selected);
         }
 
 

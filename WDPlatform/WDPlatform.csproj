@@ -181,6 +181,7 @@
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\CardsAH.cs" />
     <Compile Include="Controllers\Player.cs" />
     <Compile Include="Controllers\Game.cs" />
     <Compile Include="Controllers\GameUtils.cs" />
@@ -876,6 +877,9 @@
     <Content Include="assets\vendor\angular-animate\bower.json" />
     <Content Include="assets\vendor\angular-animate\package.json" />
     <Content Include="assets\vendor\angular-animate\README.md" />
+    <Content Include="assets\data\cards.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />

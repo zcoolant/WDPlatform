@@ -28,7 +28,11 @@
 		this.players = [];
 		this.cards = [];
 		this.question = "";
-        this.status = "WD Platform Beta"
+		this.status = "WD Platform Beta"
+		this.selectCards = [];
+		this.allSelectCards = [];
+		this.submitedNumber = 0;
+		this.submitDisable = false;
 
 		// Connection status property we'll expose to the view
 		this.connectionStatus = AppHub.connectionStatus;
@@ -67,6 +71,38 @@
 		        console.log('Game Start successfully');
 		        self.isStart = true;
 		    })
+		};
+
+		this.selecteCards = function () {
+		    AppHub.invoke('selecteCards', this.roomNumber, this.userName,this.selectCards).then(function () {
+		        console.log('Submit Cards successfully');
+		        self.submitedNumber++;
+		        if (self.submitedNumber >= 3) {
+		            self.submitDisable = true;
+		        }
+		    })
+		};
+
+		this.toogleSelected = function (item) {
+		    console.log(item);
+		    var idx = self.selectCards.indexOf(item);
+		    if (idx > -1) {
+		        self.selectCards.splice(idx, 1);
+		        item.pick = 0;
+		    }
+		    else {
+		        item.pick = selectCards.length + 1
+		        self.selectCards.push(item);
+		    }
+
+		};
+
+		this.findIndex = function (card) {
+		    console.log(card);
+		    var idx = self.selectCards.indexOf(card);
+		    //if (idx > -1)
+		        return idx;
+		    //else return '';
 		}
 
 		AppHub.on('refreshPlayers', function (players) {
@@ -82,9 +118,19 @@
 
 		AppHub.on('reloadQuestion', function (question) {
 		    console.log(question);
-		    self.status = "Q: " + question;
+		    self.status = "Q: " + question.text;
 		    self.question = question;
 		});
+
+		AppHub.on('addSelected', function (newAddedSelected) {
+		    console.log(newAddedSelected);
+		    self.allSelectCards.push(newAddedSelected);
+		});
+
+
+
+
+
 
 		// Receive the sendUserCount event from the AppHub
 		AppHub.on('sendUserCount', updateCount);

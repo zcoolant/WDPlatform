@@ -35,3 +35,19 @@
   background: #101010; }
 md-grid-tile {
   transition: all 400ms ease-out 50ms; }
+
+.cards {
+    border-radius: 25px;
+}
+
+.cards md-whiteframe{
+    padding-left: 12px;
+}
+
+.cards md-grid-tile-footer {
+    background-color:transparent;
+    padding-left:10px;
+    color:black;
+    /*border-bottom-left-radius:25px;*/
+    /*border-bottom-right-radius:25px;*/
+}
