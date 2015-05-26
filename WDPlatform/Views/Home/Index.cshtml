@@ -3,7 +3,7 @@
 }
 <div ng-show="!(appCtrl.isCreater || appCtrl.isPlayer)">
     <div class="jumbotron">
-        <h1>WD Platform</h1>
+        <h2>WD Platform</h2>
         <p class="lead">Create a game or join a existing one to start your PARTY!</p>
         <form class="navbar-form navbar-left">
             <div class="btn-group">
@@ -26,7 +26,7 @@
 </div>
 
 <div ng-show="(appCtrl.isCreater || (appCtrl.isPlayer && !(appCtrl.isStart)))">
-    <h1>Room {{appCtrl.roomNumber}} Players</h1>
+    <h2>Room {{appCtrl.roomNumber}} Players</h2>
     <md-grid-list md-cols-sm="3" md-cols-md="5" md-cols-gt-md="6"
                   md-row-height-gt-md="1:1" md-row-height="2:2"
                   md-gutter="12px" md-gutter-gt-sm="8px">
@@ -40,37 +40,44 @@
     </md-grid-list>
 </div>
 
-<div ng-show="appCtrl.isCreater">
-    <div ng-show="!appCtrl.isStart">
+<div ng-show="appCtrl.isCreater && !appCtrl.isStart">
         <button ng-click="appCtrl.start()" class="btn btn-success">Start</button>
-    </div>
-    <div ng-show="appCtrl.isStart">
-        <h1>Question: </h1>
-        <md-grid-list md-cols-sm="2" md-cols-md="6" md-cols-gt-md="6"
-                      md-row-height-gt-md="1:1" md-row-height="2:2"
-                      md-gutter="12px" md-gutter-gt-sm="8px">
+</div>
 
-            <md-grid-tile class="cards black" md-rowspan="1" md-colspan="3" md-colspan-sm="2">
-                <md-whiteframe class="md-whiteframe-z2 cards" style="height:100%; width:100%">
-                    <h2>{{appCtrl.question.text}}</h2>
-                </md-whiteframe>
-            </md-grid-tile>
-            <md-grid-tile class="cards" ng-repeat="card in appCtrl.allSelectCards">
-                <md-whiteframe class="md-whiteframe-z2 cards" style="height:100%; width:100%">
-                    <ol ng-if="appCtrl.question.pick == 1">
-                        <li ng-repeat="each in card">
-                            <h5>{{each}}</h5>
-                        </li>
-                    </ol>
-                    <h5 ng-if="appCtrl.question.pick == 0">{{card[0]}}</h5>
-                </md-whiteframe>
-            </md-grid-tile>
-        </md-grid-list>
-    </div>
+<div ng-show="appCtrl.isStart">
+    <h2>Question: </h2>
+    <md-grid-list md-cols-sm="2" md-cols-md="6" md-cols-gt-md="6"
+                  md-row-height-gt-md="1:1" md-row-height="2:2"
+                  md-gutter="12px" md-gutter-gt-sm="8px">
+
+        <md-grid-tile class="cards black" md-rowspan="1" md-colspan="3" md-colspan-md="2" md-colspan-sm="2">
+            <md-whiteframe class="md-whiteframe-z2 cards" style="height:100%; width:100%">
+                <h3>{{appCtrl.question.text}}</h3>
+            </md-whiteframe>
+        </md-grid-tile>
+    </md-grid-list>
+    <md-grid-list ng-show="appCtrl.allSelectCards.length > 0" md-cols-sm="2" md-cols-md="6" md-cols-gt-md="6"
+                  md-row-height-gt-md="1:1" md-row-height="2:2"
+                  md-gutter="12px" md-gutter-gt-sm="8px">
+
+        <md-grid-tile ng-repeat="card in appCtrl.allSelectCards" class="cards">
+            <md-whiteframe ng-if="card.length" class="md-whiteframe-z2 cards" style="height:100%; width:100%">
+                <ol ng-if="card.length > 1">
+                    <li ng-repeat="each in card">
+                        <h5>{{each.text}}</h5>
+                    </li>
+                </ol>
+                <h5 ng-if="card.length == 1">{{card[0].text}}</h5>
+                <md-grid-tile-footer ng-show="appCtrl.isQuestioner">
+                    <md-checkbox aria-label="a" ng-model="appCtrl.questionerSelected[card[0].text]" ng-click="appCtrl.toogleQuestionerSelected(card)"></md-checkbox>
+                </md-grid-tile-footer>
+            </md-whiteframe>
+        </md-grid-tile>
+    </md-grid-list>
 </div>
 
 <div ng-show="appCtrl.isPlayer && appCtrl.isStart">
-    <h1>Your cards</h1>
+    <h2>Your cards</h2>
     <md-grid-list md-cols-sm="2" md-cols-md="6" md-cols-gt-md="6"
                   md-row-height-gt-md="1:1" md-row-height="2:2"
                   md-gutter="12px" md-gutter-gt-sm="8px">
@@ -78,11 +85,46 @@
         <md-grid-tile class="cards" ng-repeat="card in appCtrl.cards">
             <md-whiteframe class="md-whiteframe-z2 cards" style="height:100%; width:100%">
                 <h5>{{card.text}}</h5>
-                <md-grid-tile-footer>
-                    <md-checkbox ng-click="appCtrl.toogleSelected(card)"><span ng-bind="{{card.pick}}"></span></md-checkbox>
+                <md-grid-tile-footer ng-show="!appCtrl.isQuestioner">
+                    <md-checkbox aria-label="a" ng-click="appCtrl.toogleSelected(card)"><span ng-show="card.pick >1">{{card.pick}}</span></md-checkbox>
                 </md-grid-tile-footer>
             </md-whiteframe>
         </md-grid-tile>
     </md-grid-list>
-    <button ng-click="appCtrl.selecteCards()" class="btn btn-warning" >Submit</button>
+</div>
+<a ng-show="appCtrl.isStart && !appCtrl.isCreator"
+   ng-disabled="(appCtrl.isQuestioner && appCtrl.submitDisable) ||
+   (!appCtrl.isQuestioner && (appCtrl.selectCards.length != appCtrl.question.pick) || (appCtrl.submitedNumber >= 2))"
+   ng-click="appCtrl.submitCards()"
+   id="submitBtn"
+   class="btn btn-warning">Confirm Selected</a>
+
+
+<div class="modal fade bs-example-modal-lg" id="showWinnerModal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">恭喜: {{appCtrl.roundWinner}}!!</h4>
+            </div>
+            <md-grid-list md-cols-sm="2" md-cols-md="2" md-cols-gt-md="2"
+                          md-row-height-gt-md="1:1" md-row-height="2:2"
+                          md-gutter="12px" md-gutter-gt-sm="8px">
+                <md-grid-tile class="cards black" md-rowspan="1" md-colspan="2" md-colspan-sm="2">
+                    <md-whiteframe class="md-whiteframe-z2 cards" style="height:100%; width:100%">
+                        <h3>{{appCtrl.roundWinnerQuestion.text}}</h3>
+                    </md-whiteframe>
+                </md-grid-tile>
+                <md-grid-tile class="cards" ng-repeat="card in appCtrl.roundWinnerCards">
+                    <md-whiteframe class="md-whiteframe-z2 cards" style="height:100%; width:100%">
+                        <h5>{{card.text}}</h5>
+                    </md-whiteframe>
+                </md-grid-tile>
+            </md-grid-list>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+       
+    </div>
 </div>

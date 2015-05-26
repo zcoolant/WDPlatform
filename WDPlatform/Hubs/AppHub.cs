@@ -61,16 +61,11 @@ namespace WDPlatform.Hubs
                     Dictionary<string, int> pscores = game.getScores();
                     if (game.status.Equals(GameStatus.STARTED)) {
                         game.reload(userName);
-                        Clients.Clients(game.players[userName].playerIds).reloadQuestion(game.currentQuestion);
-                        Clients.Clients(game.players[userName].playerIds).reloadCards(game.players[userName].cards);
+                        Clients.Clients(game.players[userName].playerIds).reloadCards(game.players[userName].cards, game.currentQuestion, pscores,game.questioner);
                     }
                     else
                     {
-                        foreach (var player in game.players.Values)
-                        {
-                            Clients.Clients(player.playerIds).refreshPlayers(pscores);
-                        }
-
+                        Clients.Clients(game.getAllPlayerIds()).refreshPlayers(pscores);
                     }
                     Clients.Clients(game.createrIds).refreshPlayers(pscores);
                     return "ok";
@@ -84,28 +79,53 @@ namespace WDPlatform.Hubs
         }
 
         //Start the game
-        public void StartGame(long roomNumber) { 
-           
+        public void StartGame(long roomNumber) {         
              Game game = GameUtils.currentGames[roomNumber];
              if (game.createrIds.Contains(Context.ConnectionId)) {
                  //This user is the creater
-                 game.reloadAll();
-                 foreach (var player in game.players.Values)
-                 {
-                     Clients.Clients(player.playerIds).reloadQuestion(game.currentQuestion);
-                     Clients.Clients(player.playerIds).reloadCards(player.cards);
-                 }
-                 Clients.Clients(game.createrIds).reloadQuestion(game.currentQuestion);
+                 startNewRoundAll(game);
              }
         }
 
-        public void SelecteCards(long roomNumber, string userName, List<string> selected) {
+        //Player submit a selection
+        public void SubmitCards(long roomNumber, string userName, List<CardsAH.Card> selected)
+        {
             Game game = GameUtils.currentGames[roomNumber];
             Player player = game.players[userName];
+            player.cards.RemoveAll(c => selected.Exists(s => s.text == c.text));
             player.currentSelected.Add(selected);
             Clients.Clients(game.createrIds).addSelected(selected);
+            Clients.Clients(game.players[game.questioner].playerIds).addSelected(selected);
         }
 
+        //Questioner confirm a selection
+        public void QuestionerConfirm(long roomNumber, string userName, string selected)
+        {
+            Game game = GameUtils.currentGames[roomNumber];
+            string roundWinner = game.players.First(p => p.Value.currentSelected.Exists(cs=>cs[0].text==selected)).Key;
+            foreach (var player in game.players.Values) {
+                if (player.currentSelected.Count > 1 && player.userName != roundWinner) { 
+                    //Bid person. Minus one score
+                    player.score--;
+                }
+            }
+            game.players[roundWinner].score++;
+            game.questioner = roundWinner;
+            List<CardsAH.Card> fullSelected = game.players[roundWinner].currentSelected.First(c=>c[0].text == selected);
+            Clients.Clients(game.getAllPlayerIds()).showRoundWinner(roundWinner, fullSelected,game.currentQuestion);
+            Clients.Clients(game.createrIds).showRoundWinner(roundWinner, fullSelected, game.currentQuestion);
+            startNewRoundAll(game);
+        }
+
+        //start a brand new round for all
+        private void startNewRoundAll(Game game) {
+            game.reloadAll();
+            foreach (var player in game.players.Values)
+            {
+                Clients.Clients(player.playerIds).reloadCards(player.newRoundCards, game.currentQuestion, game.getScores(), game.questioner);
+            }
+            Clients.Clients(game.createrIds).reloadCards(game.getSelectedFromAll(), game.currentQuestion, game.getScores(), game.questioner);
+        }
 
     }
 }

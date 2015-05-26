@@ -25,6 +25,7 @@ namespace WDPlatform.Controllers
         public GameStatus status { get; set; }
         public CardsAH cardsAH { get; set; }
         public CardsAH.Card currentQuestion { get; set; }
+        public string questioner { get; set; }
 
         //Get this game's roomnumber
         public long getRoomNumber()
@@ -39,6 +40,8 @@ namespace WDPlatform.Controllers
             String json = GameUtils.getCardsJson();
             JavaScriptSerializer jss = new JavaScriptSerializer();
             CardsAH cah = jss.Deserialize<CardsAH>(json);
+            cah.blackCards = cah.blackCards.OrderBy(a => Guid.NewGuid()).ToList();
+            cah.whiteCards = cah.whiteCards.OrderBy(a => Guid.NewGuid()).ToList();
             this.cardsAH = cah;
 
             //Change status
@@ -54,17 +57,20 @@ namespace WDPlatform.Controllers
             }
             foreach (Player player in players.Values)
             {
+                player.newRoundCards = new List<CardsAH.Card>();
                 if (player.cards.Count < defaultCardNumberPerP)
                 {
-                    player.cards.AddRange(draw(defaultCardNumberPerP - player.cards.Count));
+                    player.newRoundCards.AddRange(draw(defaultCardNumberPerP - player.cards.Count));
+                    player.cards.AddRange(player.newRoundCards);
                 }
+                player.currentSelected.Clear();
             }
 
             currentQuestion = cardsAH.blackCards[0];
             cardsAH.blackCards.RemoveAt(0);
         }
 
-        //reload for specific user to default number
+        //reload for specific user to default number. Only use when new user join
         public void reload(string userName)
         {
             if (cardsAH == null)
@@ -75,11 +81,9 @@ namespace WDPlatform.Controllers
 
             if (player.cards.Count < defaultCardNumberPerP)
             {
-                player.cards.AddRange(draw(defaultCardNumberPerP - player.cards.Count));
+                player.newRoundCards = draw(defaultCardNumberPerP - player.cards.Count);
+                player.cards.AddRange(player.newRoundCards);
             }
-
-            currentQuestion = cardsAH.blackCards[0];
-            cardsAH.blackCards.RemoveAt(0);
         }
 
         //Add a player to current game's players
@@ -95,6 +99,9 @@ namespace WDPlatform.Controllers
                 player.playerIds.Add(sessionId);
                 players[userName] = player;
             }
+            if (players.Count == 1) {
+                questioner = userName;
+            }
         }
 
         //return all plays and his score
@@ -108,10 +115,30 @@ namespace WDPlatform.Controllers
             return playerScores;
         }
 
+        public List<List<CardsAH.Card>> getSelectedFromAll (){
+            List<List<CardsAH.Card>> result = new List<List<CardsAH.Card>>();
+            foreach (var user in players.Keys)
+            {
+                result.AddRange(players[user].currentSelected);
+            }
+            return result;
+        }
+
+        public List<string> getAllPlayerIds() {
+            List<string> ids = new List<string>();
+            foreach (var player in players) {
+                ids.AddRange(player.Value.playerIds);
+            }
+            return ids;
+        }
+
         //draw the top number of cards from allCards
         private List<CardsAH.Card> draw(int number)
         {
-            List<CardsAH.Card> result = cardsAH.whiteCards.GetRange(0, number);
+            List<CardsAH.Card> result = new List<CardsAH.Card>();
+            foreach (var card in cardsAH.whiteCards.GetRange(0, number)) {
+                result.Add(new CardsAH.Card(card));
+            }
             cardsAH.whiteCards.RemoveRange(0, number);
             return result;
         }
