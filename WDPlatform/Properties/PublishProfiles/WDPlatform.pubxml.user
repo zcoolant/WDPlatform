@@ -1,0 +1,2191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\WDPlatform</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include=".bowerrc">
+      <publishTime>05/03/2015 18:44:46</publishTime>
+    </File>
+    <File Include=".gitignore">
+      <publishTime>05/03/2015 18:44:46</publishTime>
+    </File>
+    <File Include="app/app.js">
+      <publishTime>05/22/2015 17:15:08</publishTime>
+    </File>
+    <File Include="app/common/signalr.service.js">
+      <publishTime>05/03/2015 18:44:46</publishTime>
+    </File>
+    <File Include="app/controllers/app.controller.js">
+      <publishTime>05/23/2015 08:52:10</publishTime>
+    </File>
+    <File Include="app/controllers/message.controller.js">
+      <publishTime>05/03/2015 18:44:46</publishTime>
+    </File>
+    <File Include="app/services/app.hub.js">
+      <publishTime>05/03/2015 18:44:46</publishTime>
+    </File>
+    <File Include="app/services/message.hub.js">
+      <publishTime>05/03/2015 18:44:46</publishTime>
+    </File>
+    <File Include="app/showRoundWinner.html">
+      <publishTime>05/22/2015 21:15:24</publishTime>
+    </File>
+    <File Include="assets/css/app.css">
+      <publishTime>05/23/2015 09:23:29</publishTime>
+    </File>
+    <File Include="assets/data/cards.json">
+      <publishTime>05/19/2015 20:50:55</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-animate/.bower.json">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-animate/angular-animate.js">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-animate/angular-animate.min.js">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-animate/angular-animate.min.js.map">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-animate/bower.json">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-animate/index.js">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-animate/package.json">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-animate/README.md">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-aria/.bower.json">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-aria/angular-aria.js">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-aria/angular-aria.min.js">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-aria/angular-aria.min.js.map">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-aria/bower.json">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-aria/index.js">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-aria/package.json">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-aria/README.md">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/.bower.json">
+      <publishTime>05/17/2015 21:25:14</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/.gitignore">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/angular-material-mocks.js">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/angular-material.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/angular-material.js">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/angular-material.min.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/angular-material.min.js">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/bower.json">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/demos/bottomSheet/demoBasicUsage/img/icons/copy.svg">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/demos/bottomSheet/demoBasicUsage/img/icons/copy2.svg">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/demos/bottomSheet/demoBasicUsage/img/icons/facebook.svg">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/demos/bottomSheet/demoBasicUsage/img/icons/hangout.svg">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/demos/bottomSheet/demoBasicUsage/img/icons/mail.svg">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/demos/bottomSheet/demoBasicUsage/img/icons/message.svg">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/demos/bottomSheet/demoBasicUsage/img/icons/print.svg">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/demos/bottomSheet/demoBasicUsage/img/icons/share-arrow.svg">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/demos/bottomSheet/demoBasicUsage/img/icons/twitter.svg">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/demos/bottomSheet/demoBasicUsage/img/icons/upload.svg">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/demos/chips/demoBasicUsage/style.scss">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/demos/chips/demoContactChips/style.scss">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/demos/gridList/demoBasicUsage/style.scss">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/demos/gridList/demoDynamicTiles/style.scss">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/demos/gridList/demoResponsiveUsage/style.scss">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/demos/icon/demoLoadSvgIconsFromUrl/img/icons/addShoppingCart.svg">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/demos/icon/demoLoadSvgIconsFromUrl/img/icons/android.svg">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/demos/icon/demoLoadSvgIconsFromUrl/img/icons/cake.svg">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/demos/icon/demoSvgIconSets/assets/cake.svg">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/demos/icon/demoSvgIconSets/assets/core-icons.svg">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/demos/icon/demoSvgIconSets/assets/social-icons.svg">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/demos/icon/demoSvgIconsFromURL/img/icons/addShoppingCart.svg">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/demos/icon/demoSvgIconsFromURL/img/icons/android.svg">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/demos/icon/demoSvgIconsFromURL/img/icons/cake.svg">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/demos/icon/demoUsingTemplateCache/assets/android.svg">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/demos/icon/demoUsingTemplateCache/assets/cake.svg">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/demos/icon/demoUsingTemplateCache/assets/core-icons.svg">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/demos/input/demoIcons/icons/ic_email_24px.svg">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/demos/input/demoIcons/icons/ic_person_24px.svg">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/demos/input/demoIcons/icons/ic_phone_24px.svg">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/demos/input/demoIcons/icons/ic_place_24px.svg">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/demos/input/demoIcons/style.scss">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/demos/list/demoListControls/img/100-0.jpeg">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/demos/list/demoListControls/img/100-1.jpeg">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/demos/list/demoListControls/img/100-2.jpeg">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/demos/tabs/demoDynamicHeight/style.scss">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/demos/tabs/demoDynamicTabs/style.scss">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/demos/tabs/demoStaticTabs/style.scss">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/demos/toolbar/demoBasicUsage/img/icons/favorite.svg">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/demos/toolbar/demoBasicUsage/img/icons/menu.svg">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/demos/toolbar/demoBasicUsage/img/icons/more_vert.svg">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/index.js">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/LICENSE">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/closure/autocomplete/autocomplete-default-theme.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/closure/autocomplete/autocomplete.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/closure/autocomplete/autocomplete.js">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/closure/backdrop/backdrop-default-theme.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/closure/backdrop/backdrop.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/closure/backdrop/backdrop.js">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/closure/bottomSheet/bottomSheet-default-theme.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/closure/bottomSheet/bottomSheet.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/closure/bottomSheet/bottomSheet.js">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/closure/button/button-default-theme.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/closure/button/button.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/closure/button/button.js">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/closure/card/card-default-theme.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/closure/card/card.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/closure/card/card.js">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/closure/checkbox/checkbox-default-theme.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/closure/checkbox/checkbox.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/closure/checkbox/checkbox.js">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/closure/chips/chips-default-theme.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/closure/chips/chips.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/closure/chips/chips.js">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/closure/content/content-default-theme.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/closure/content/content.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/closure/content/content.js">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/closure/core/core.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/closure/core/core.js">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/closure/core/default-theme.js">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/closure/dialog/dialog-default-theme.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/closure/dialog/dialog.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/closure/dialog/dialog.js">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/closure/divider/divider-default-theme.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/closure/divider/divider.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/closure/divider/divider.js">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/closure/gridList/gridList-default-theme.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/closure/gridList/gridList.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/closure/gridList/gridList.js">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/closure/icon/icon-default-theme.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/closure/icon/icon.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/closure/icon/icon.js">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/closure/input/input-default-theme.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/closure/input/input.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/closure/input/input.js">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/closure/list/list-default-theme.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/closure/list/list.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/closure/list/list.js">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/closure/menu/menu.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/closure/menu/menu.js">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/closure/progressCircular/progressCircular-default-theme.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/closure/progressCircular/progressCircular.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/closure/progressCircular/progressCircular.js">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/closure/progressLinear/progressLinear-default-theme.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/closure/progressLinear/progressLinear.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/closure/progressLinear/progressLinear.js">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/closure/radioButton/radioButton-default-theme.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/closure/radioButton/radioButton.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/closure/radioButton/radioButton.js">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/closure/select/select-default-theme.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/closure/select/select.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/closure/select/select.js">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/closure/sidenav/sidenav-default-theme.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/closure/sidenav/sidenav.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/closure/sidenav/sidenav.js">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/closure/slider/slider-default-theme.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/closure/slider/slider.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/closure/slider/slider.js">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/closure/sticky/sticky.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/closure/sticky/sticky.js">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/closure/subheader/subheader-default-theme.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/closure/subheader/subheader.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/closure/subheader/subheader.js">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/closure/swipe/swipe.js">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/closure/switch/switch-default-theme.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/closure/switch/switch.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/closure/switch/switch.js">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/closure/tabs/tabs-arrow.svg">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/closure/tabs/tabs-default-theme.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/closure/tabs/tabs.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/closure/tabs/tabs.js">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/closure/textField/textField-default-theme.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/closure/textField/textField.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/closure/textField/textField.js">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/closure/toast/toast-default-theme.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/closure/toast/toast.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/closure/toast/toast.js">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/closure/toolbar/toolbar-default-theme.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/closure/toolbar/toolbar.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/closure/toolbar/toolbar.js">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/closure/tooltip/tooltip-default-theme.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/closure/tooltip/tooltip.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/closure/tooltip/tooltip.js">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/closure/whiteframe/whiteframe.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/closure/whiteframe/whiteframe.js">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/css/angular-material-layout.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/autocomplete/autocomplete-default-theme.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/autocomplete/autocomplete-default-theme.min.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/autocomplete/autocomplete.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/autocomplete/autocomplete.js">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/autocomplete/autocomplete.min.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/autocomplete/autocomplete.min.js">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/autocomplete/bower.json">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/backdrop/backdrop-default-theme.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/backdrop/backdrop-default-theme.min.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/backdrop/backdrop.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/backdrop/backdrop.js">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/backdrop/backdrop.min.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/backdrop/backdrop.min.js">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/backdrop/bower.json">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/bottomSheet/bottomSheet-default-theme.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/bottomSheet/bottomSheet-default-theme.min.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/bottomSheet/bottomSheet.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/bottomSheet/bottomSheet.js">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/bottomSheet/bottomSheet.min.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/bottomSheet/bottomSheet.min.js">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/bottomSheet/bower.json">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/button/bower.json">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/button/button-default-theme.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/button/button-default-theme.min.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/button/button.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/button/button.js">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/button/button.min.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/button/button.min.js">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/card/bower.json">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/card/card-default-theme.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/card/card-default-theme.min.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/card/card.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/card/card.js">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/card/card.min.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/card/card.min.js">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/checkbox/bower.json">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/checkbox/checkbox-default-theme.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/checkbox/checkbox-default-theme.min.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/checkbox/checkbox.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/checkbox/checkbox.js">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/checkbox/checkbox.min.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/checkbox/checkbox.min.js">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/chips/bower.json">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/chips/chips-default-theme.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/chips/chips-default-theme.min.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/chips/chips.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/chips/chips.js">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/chips/chips.min.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/chips/chips.min.js">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/content/bower.json">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/content/content-default-theme.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/content/content-default-theme.min.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/content/content.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/content/content.js">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/content/content.min.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/content/content.min.js">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/core/bower.json">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/core/core.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/core/core.js">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/core/core.min.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/core/core.min.js">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/core/default-theme.js">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/dialog/bower.json">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/dialog/dialog-default-theme.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/dialog/dialog-default-theme.min.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/dialog/dialog.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/dialog/dialog.js">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/dialog/dialog.min.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/dialog/dialog.min.js">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/divider/bower.json">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/divider/divider-default-theme.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/divider/divider-default-theme.min.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/divider/divider.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/divider/divider.js">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/divider/divider.min.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/divider/divider.min.js">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/gridList/bower.json">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/gridList/gridList.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/gridList/gridList.js">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/gridList/gridList.min.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/gridList/gridList.min.js">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/icon/bower.json">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/icon/icon-default-theme.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/icon/icon-default-theme.min.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/icon/icon.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/icon/icon.js">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/icon/icon.min.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/icon/icon.min.js">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/input/bower.json">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/input/input-default-theme.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/input/input-default-theme.min.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/input/input.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/input/input.js">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/input/input.min.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/input/input.min.js">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/list/bower.json">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/list/list-default-theme.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/list/list-default-theme.min.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/list/list.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/list/list.js">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/list/list.min.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/list/list.min.js">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/menu/bower.json">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/menu/menu.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/menu/menu.js">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/menu/menu.min.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/menu/menu.min.js">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/progressCircular/bower.json">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/progressCircular/progressCircular-default-theme.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/progressCircular/progressCircular-default-theme.min.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/progressCircular/progressCircular.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/progressCircular/progressCircular.js">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/progressCircular/progressCircular.min.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/progressCircular/progressCircular.min.js">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/progressLinear/bower.json">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/progressLinear/progressLinear-default-theme.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/progressLinear/progressLinear-default-theme.min.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/progressLinear/progressLinear.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/progressLinear/progressLinear.js">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/progressLinear/progressLinear.min.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/progressLinear/progressLinear.min.js">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/radioButton/bower.json">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/radioButton/radioButton-default-theme.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/radioButton/radioButton-default-theme.min.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/radioButton/radioButton.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/radioButton/radioButton.js">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/radioButton/radioButton.min.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/radioButton/radioButton.min.js">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/select/bower.json">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/select/select-default-theme.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/select/select-default-theme.min.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/select/select.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/select/select.js">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/select/select.min.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/select/select.min.js">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/sidenav/bower.json">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/sidenav/sidenav-default-theme.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/sidenav/sidenav-default-theme.min.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/sidenav/sidenav.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/sidenav/sidenav.js">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/sidenav/sidenav.min.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/sidenav/sidenav.min.js">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/slider/bower.json">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/slider/slider-default-theme.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/slider/slider-default-theme.min.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/slider/slider.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/slider/slider.js">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/slider/slider.min.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/slider/slider.min.js">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/sticky/bower.json">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/sticky/sticky.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/sticky/sticky.js">
+      <publishTime>05/17/2015 21:25:14</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/sticky/sticky.min.css">
+      <publishTime>05/17/2015 21:25:14</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/sticky/sticky.min.js">
+      <publishTime>05/17/2015 21:25:14</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/subheader/bower.json">
+      <publishTime>05/17/2015 21:25:14</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/subheader/subheader-default-theme.css">
+      <publishTime>05/17/2015 21:25:14</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/subheader/subheader-default-theme.min.css">
+      <publishTime>05/17/2015 21:25:14</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/subheader/subheader.css">
+      <publishTime>05/17/2015 21:25:14</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/subheader/subheader.js">
+      <publishTime>05/17/2015 21:25:14</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/subheader/subheader.min.css">
+      <publishTime>05/17/2015 21:25:14</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/subheader/subheader.min.js">
+      <publishTime>05/17/2015 21:25:14</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/swipe/bower.json">
+      <publishTime>05/17/2015 21:25:14</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/swipe/swipe.js">
+      <publishTime>05/17/2015 21:25:14</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/swipe/swipe.min.js">
+      <publishTime>05/17/2015 21:25:14</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/switch/bower.json">
+      <publishTime>05/17/2015 21:25:14</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/switch/switch-default-theme.css">
+      <publishTime>05/17/2015 21:25:14</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/switch/switch-default-theme.min.css">
+      <publishTime>05/17/2015 21:25:14</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/switch/switch.css">
+      <publishTime>05/17/2015 21:25:14</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/switch/switch.js">
+      <publishTime>05/17/2015 21:25:14</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/switch/switch.min.css">
+      <publishTime>05/17/2015 21:25:14</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/switch/switch.min.js">
+      <publishTime>05/17/2015 21:25:14</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/tabs/bower.json">
+      <publishTime>05/17/2015 21:25:14</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/tabs/tabs-default-theme.css">
+      <publishTime>05/17/2015 21:25:14</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/tabs/tabs-default-theme.min.css">
+      <publishTime>05/17/2015 21:25:14</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/tabs/tabs.css">
+      <publishTime>05/17/2015 21:25:14</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/tabs/tabs.js">
+      <publishTime>05/17/2015 21:25:14</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/tabs/tabs.min.css">
+      <publishTime>05/17/2015 21:25:14</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/tabs/tabs.min.js">
+      <publishTime>05/17/2015 21:25:14</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/textField/bower.json">
+      <publishTime>05/17/2015 21:25:14</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/textField/textField-default-theme.css">
+      <publishTime>05/17/2015 21:25:14</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/textField/textField-default-theme.min.css">
+      <publishTime>05/17/2015 21:25:14</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/textField/textField.css">
+      <publishTime>05/17/2015 21:25:14</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/textField/textField.js">
+      <publishTime>05/17/2015 21:25:14</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/textField/textField.min.css">
+      <publishTime>05/17/2015 21:25:14</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/textField/textField.min.js">
+      <publishTime>05/17/2015 21:25:14</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/toast/bower.json">
+      <publishTime>05/17/2015 21:25:14</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/toast/toast-default-theme.css">
+      <publishTime>05/17/2015 21:25:14</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/toast/toast-default-theme.min.css">
+      <publishTime>05/17/2015 21:25:14</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/toast/toast.css">
+      <publishTime>05/17/2015 21:25:14</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/toast/toast.js">
+      <publishTime>05/17/2015 21:25:14</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/toast/toast.min.css">
+      <publishTime>05/17/2015 21:25:14</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/toast/toast.min.js">
+      <publishTime>05/17/2015 21:25:14</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/toolbar/bower.json">
+      <publishTime>05/17/2015 21:25:14</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/toolbar/toolbar-default-theme.css">
+      <publishTime>05/17/2015 21:25:14</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/toolbar/toolbar-default-theme.min.css">
+      <publishTime>05/17/2015 21:25:14</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/toolbar/toolbar.css">
+      <publishTime>05/17/2015 21:25:14</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/toolbar/toolbar.js">
+      <publishTime>05/17/2015 21:25:14</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/toolbar/toolbar.min.css">
+      <publishTime>05/17/2015 21:25:14</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/toolbar/toolbar.min.js">
+      <publishTime>05/17/2015 21:25:14</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/tooltip/bower.json">
+      <publishTime>05/17/2015 21:25:14</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/tooltip/tooltip-default-theme.css">
+      <publishTime>05/17/2015 21:25:14</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/tooltip/tooltip-default-theme.min.css">
+      <publishTime>05/17/2015 21:25:14</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/tooltip/tooltip.css">
+      <publishTime>05/17/2015 21:25:14</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/tooltip/tooltip.js">
+      <publishTime>05/17/2015 21:25:14</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/tooltip/tooltip.min.css">
+      <publishTime>05/17/2015 21:25:14</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/tooltip/tooltip.min.js">
+      <publishTime>05/17/2015 21:25:14</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/whiteframe/bower.json">
+      <publishTime>05/17/2015 21:25:14</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/whiteframe/whiteframe.css">
+      <publishTime>05/17/2015 21:25:14</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/whiteframe/whiteframe.js">
+      <publishTime>05/17/2015 21:25:14</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/whiteframe/whiteframe.min.css">
+      <publishTime>05/17/2015 21:25:14</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/modules/js/whiteframe/whiteframe.min.js">
+      <publishTime>05/17/2015 21:25:14</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/package.json">
+      <publishTime>05/17/2015 21:25:14</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-material/README.md">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-swing/.bower.json">
+      <publishTime>05/17/2015 20:37:11</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-swing/.gitdown/card-stack.gif">
+      <publishTime>05/17/2015 20:37:11</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-swing/.gitdown/README.md">
+      <publishTime>05/17/2015 20:37:11</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-swing/.gitignore">
+      <publishTime>05/17/2015 20:37:11</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-swing/.travis.yml">
+      <publishTime>05/17/2015 20:37:11</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-swing/bower.json">
+      <publishTime>05/17/2015 20:37:11</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-swing/dist/angular-swing.js">
+      <publishTime>05/17/2015 20:37:11</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-swing/dist/angular-swing.min.js">
+      <publishTime>05/17/2015 20:37:11</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-swing/examples/card-stack/card-stack.css">
+      <publishTime>05/17/2015 20:37:11</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-swing/examples/card-stack/card-stack.js">
+      <publishTime>05/17/2015 20:37:11</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-swing/examples/card-stack/card-stack.scss">
+      <publishTime>05/17/2015 20:37:11</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-swing/examples/card-stack/index.html">
+      <publishTime>05/17/2015 20:37:11</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-swing/gulpfile.js">
+      <publishTime>05/17/2015 20:37:11</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-swing/karma.conf.js">
+      <publishTime>05/17/2015 20:37:11</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-swing/LICENSE">
+      <publishTime>05/17/2015 20:37:11</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-swing/package.json">
+      <publishTime>05/17/2015 20:37:11</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-swing/README.md">
+      <publishTime>05/17/2015 20:37:11</publishTime>
+    </File>
+    <File Include="assets/vendor/angular-swing/src/angular-swing.js">
+      <publishTime>05/17/2015 20:37:11</publishTime>
+    </File>
+    <File Include="assets/vendor/angular/.bower.json">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular/angular-csp.css">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular/angular.js">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular/angular.min.js">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular/angular.min.js.gzip">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular/angular.min.js.map">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular/bower.json">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular/package.json">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/angular/README.md">
+      <publishTime>05/17/2015 21:25:13</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/.bower.json">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/bower.json">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/dist/css/bootstrap-theme.css">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/dist/css/bootstrap-theme.css.map">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/dist/css/bootstrap-theme.min.css">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/dist/css/bootstrap.css">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/dist/css/bootstrap.css.map">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/dist/css/bootstrap.min.css">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/dist/fonts/glyphicons-halflings-regular.eot">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/dist/fonts/glyphicons-halflings-regular.svg">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/dist/fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/dist/fonts/glyphicons-halflings-regular.woff">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/dist/js/bootstrap.js">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/dist/js/bootstrap.min.js">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/fonts/glyphicons-halflings-regular.eot">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/fonts/glyphicons-halflings-regular.svg">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/fonts/glyphicons-halflings-regular.woff">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/grunt/bs-glyphicons-data-generator.js">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/grunt/bs-lessdoc-parser.js">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/grunt/bs-raw-files-generator.js">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/grunt/sauce_browsers.yml">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/Gruntfile.js">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/js/affix.js">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/js/alert.js">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/js/button.js">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/js/carousel.js">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/js/collapse.js">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/js/dropdown.js">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/js/modal.js">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/js/popover.js">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/js/scrollspy.js">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/js/tab.js">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/js/tooltip.js">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/js/transition.js">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/less/alerts.less">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/less/badges.less">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/less/bootstrap.less">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/less/breadcrumbs.less">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/less/button-groups.less">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/less/buttons.less">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/less/carousel.less">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/less/close.less">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/less/code.less">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/less/component-animations.less">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/less/dropdowns.less">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/less/forms.less">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/less/glyphicons.less">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/less/grid.less">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/less/input-groups.less">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/less/jumbotron.less">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/less/labels.less">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/less/list-group.less">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/less/media.less">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/less/mixins.less">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/less/mixins/alerts.less">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/less/mixins/background-variant.less">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/less/mixins/border-radius.less">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/less/mixins/buttons.less">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/less/mixins/center-block.less">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/less/mixins/clearfix.less">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/less/mixins/forms.less">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/less/mixins/gradients.less">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/less/mixins/grid-framework.less">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/less/mixins/grid.less">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/less/mixins/hide-text.less">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/less/mixins/image.less">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/less/mixins/labels.less">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/less/mixins/list-group.less">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/less/mixins/nav-divider.less">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/less/mixins/nav-vertical-align.less">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/less/mixins/opacity.less">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/less/mixins/pagination.less">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/less/mixins/panels.less">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/less/mixins/progress-bar.less">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/less/mixins/reset-filter.less">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/less/mixins/resize.less">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/less/mixins/responsive-visibility.less">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/less/mixins/size.less">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/less/mixins/tab-focus.less">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/less/mixins/table-row.less">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/less/mixins/text-emphasis.less">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/less/mixins/text-overflow.less">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/less/mixins/vendor-prefixes.less">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/less/modals.less">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/less/navbar.less">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/less/navs.less">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/less/normalize.less">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/less/pager.less">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/less/pagination.less">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/less/panels.less">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/less/popovers.less">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/less/print.less">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/less/progress-bars.less">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/less/responsive-embed.less">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/less/responsive-utilities.less">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/less/scaffolding.less">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/less/tables.less">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/less/theme.less">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/less/thumbnails.less">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/less/tooltip.less">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/less/type.less">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/less/utilities.less">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/less/variables.less">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/less/wells.less">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/LICENSE">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/package.json">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/bootstrap/README.md">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/.bower.json">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/.editorconfig">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/.gitattributes">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/.gitignore">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/.gitmodules">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/.jshintrc">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/.mailmap">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/AUTHORS.txt">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/bower.json">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/build/release-notes.js">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/build/release.js">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/component.json">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/composer.json">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/CONTRIBUTING.md">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/Gruntfile.js">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/jquery-migrate.js">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/jquery-migrate.min.js">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/jquery.js">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/jquery.min.js">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/jquery.min.map">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/MIT-LICENSE.txt">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/package.json">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/README.md">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/speed/benchmark.js">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/speed/benchmarker.css">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/speed/benchmarker.js">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/speed/closest.html">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/speed/css.html">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/speed/event.html">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/speed/filter.html">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/speed/find.html">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/speed/index.html">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/speed/jquery-basis.js">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/speed/slice.vs.concat.html">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/src/.jshintrc">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/src/ajax.js">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/src/ajax/jsonp.js">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/src/ajax/script.js">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/src/ajax/xhr.js">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/src/attributes.js">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/src/callbacks.js">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/src/core.js">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/src/css.js">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/src/data.js">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/src/deferred.js">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/src/deprecated.js">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/src/dimensions.js">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/src/effects.js">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/src/event-alias.js">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/src/event.js">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/src/exports.js">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/src/intro.js">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/src/manipulation.js">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/src/offset.js">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/src/outro.js">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/src/queue.js">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/src/serialize.js">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/src/sizzle-jquery.js">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/src/support.js">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/src/traversing.js">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/src/wrap.js">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/test/.jshintignore">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/test/.jshintrc">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/test/data/1x1.jpg">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/test/data/ajax/unreleasedXHR.html">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/test/data/atom+xml.php">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/test/data/badcall.js">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/test/data/badjson.js">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/test/data/cleanScript.html">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/test/data/core/cc_on.html">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/test/data/dashboard.xml">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/test/data/dimensions/documentLarge.html">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/test/data/dimensions/documentSmall.html">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/test/data/echoData.php">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/test/data/echoQuery.php">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/test/data/errorWithJSON.php">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/test/data/errorWithText.php">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/test/data/etag.php">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/test/data/evalScript.php">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/test/data/event/focusElem.html">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/test/data/event/longLoadScript.php">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/test/data/event/promiseReady.html">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/test/data/event/syncReady.html">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/test/data/headers.php">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/test/data/iframe.html">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/test/data/if_modified_since.php">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/test/data/jquery-1.9.1.ajax_xhr.min.js">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/test/data/json.php">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/test/data/jsonp.php">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/test/data/json_obj.js">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/test/data/manipulation/iframe-denied.html">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/test/data/name.html">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/test/data/name.php">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/test/data/nocontent.php">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/test/data/offset/absolute.html">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/test/data/offset/body.html">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/test/data/offset/fixed.html">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/test/data/offset/relative.html">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/test/data/offset/scroll.html">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/test/data/offset/static.html">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/test/data/offset/table.html">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/test/data/params_html.php">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/test/data/readywaitasset.js">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/test/data/readywaitloader.js">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/test/data/script.php">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/test/data/selector/html5_selector.html">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/test/data/selector/sizzle_cache.html">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/test/data/statusText.php">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/test/data/support/bodyBackground.html">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/test/data/support/boxSizing.html">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/test/data/support/csp.js">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/test/data/support/csp.php">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/test/data/support/shrinkWrapBlocks.html">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/test/data/support/testElementCrash.html">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/test/data/test.html">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/test/data/test.js">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/test/data/test.php">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/test/data/test2.html">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/test/data/test3.html">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/test/data/testinit.js">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/test/data/testrunner.js">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/test/data/testsuite.css">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/test/data/text.php">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/test/data/ua.txt">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/test/data/with_fries.xml">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/test/data/with_fries_over_jsonp.php">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/test/delegatetest.html">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/test/hovertest.html">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/test/index.html">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/test/jquery.js">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/test/localfile.html">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/test/networkerror.html">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/test/readywait.html">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/test/unit/ajax.js">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/test/unit/attributes.js">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/test/unit/callbacks.js">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/test/unit/core.js">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/test/unit/css.js">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/test/unit/data.js">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/test/unit/deferred.js">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/test/unit/deprecated.js">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/test/unit/dimensions.js">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/test/unit/effects.js">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/test/unit/event.js">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/test/unit/exports.js">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/test/unit/manipulation.js">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/test/unit/offset.js">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/test/unit/queue.js">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/test/unit/selector.js">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/test/unit/serialize.js">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/test/unit/support.js">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/test/unit/traversing.js">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/test/unit/wrap.js">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/jquery/test/xhtml.php">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/signalr/.bower.json">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/signalr/bower.json">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/signalr/jquery.signalR.js">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/signalr/jquery.signalR.min.js">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/signalr/LICENSE.md">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="assets/vendor/signalr/README.md">
+      <publishTime>05/03/2015 20:59:40</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.dll">
+      <publishTime>05/03/2015 14:50:31</publishTime>
+    </File>
+    <File Include="bin/assets/data/cards.json">
+      <publishTime>05/19/2015 20:50:55</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>05/03/2015 14:50:31</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>05/03/2015 14:50:31</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Identity.Core.dll">
+      <publishTime>05/03/2015 14:50:32</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Identity.EntityFramework.dll">
+      <publishTime>05/03/2015 14:50:32</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Identity.Owin.dll">
+      <publishTime>05/03/2015 14:50:32</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.SignalR.Core.dll">
+      <publishTime>05/03/2015 16:06:10</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.SignalR.SystemWeb.dll">
+      <publishTime>05/03/2015 14:50:33</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.dll">
+      <publishTime>05/03/2015 14:50:34</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Host.SystemWeb.dll">
+      <publishTime>05/03/2015 16:02:51</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Cookies.dll">
+      <publishTime>05/03/2015 14:50:34</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.dll">
+      <publishTime>05/03/2015 14:50:34</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Facebook.dll">
+      <publishTime>05/03/2015 14:50:35</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Google.dll">
+      <publishTime>05/03/2015 14:50:35</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.MicrosoftAccount.dll">
+      <publishTime>05/03/2015 14:50:35</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.OAuth.dll">
+      <publishTime>05/03/2015 14:50:35</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Twitter.dll">
+      <publishTime>05/03/2015 14:50:36</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>05/03/2015 14:50:36</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>05/03/2015 14:50:36</publishTime>
+    </File>
+    <File Include="bin/Owin.dll">
+      <publishTime>05/03/2015 14:50:36</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>05/03/2015 14:50:34</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>05/03/2015 14:50:32</publishTime>
+    </File>
+    <File Include="bin/System.Web.Optimization.dll">
+      <publishTime>05/03/2015 14:50:33</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>05/03/2015 14:50:32</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>05/03/2015 14:50:34</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>05/03/2015 14:50:34</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>05/03/2015 14:50:34</publishTime>
+    </File>
+    <File Include="bin/WDPlatform.dll">
+      <publishTime>05/23/2015 09:25:33</publishTime>
+    </File>
+    <File Include="bin/WebGrease.dll">
+      <publishTime>05/03/2015 14:50:37</publishTime>
+    </File>
+    <File Include="bower.json">
+      <publishTime>05/17/2015 21:25:17</publishTime>
+    </File>
+    <File Include="favicon.ico">
+      <publishTime>05/03/2015 18:44:46</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>05/03/2015 18:44:46</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>05/03/2015 18:44:46</publishTime>
+    </File>
+    <File Include="Readme.md">
+      <publishTime>05/03/2015 18:44:46</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.js">
+      <publishTime>05/03/2015 18:44:46</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.js">
+      <publishTime>05/03/2015 18:44:46</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.map">
+      <publishTime>05/03/2015 18:44:46</publishTime>
+    </File>
+    <File Include="Scripts/jquery.signalR-2.0.2.js">
+      <publishTime>05/03/2015 18:44:46</publishTime>
+    </File>
+    <File Include="Scripts/jquery.signalR-2.0.2.min.js">
+      <publishTime>05/03/2015 18:44:46</publishTime>
+    </File>
+    <File Include="Views/Home/Game.cshtml">
+      <publishTime>05/10/2015 20:14:51</publishTime>
+    </File>
+    <File Include="Views/Home/Index.cshtml">
+      <publishTime>05/23/2015 08:49:14</publishTime>
+    </File>
+    <File Include="Views/Home/TestChat.cshtml">
+      <publishTime>05/10/2015 16:23:53</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>05/23/2015 09:22:42</publishTime>
+    </File>
+    <File Include="Views/Web.config">
+      <publishTime>05/03/2015 18:44:46</publishTime>
+    </File>
+    <File Include="Views/_ViewStart.cshtml">
+      <publishTime>05/03/2015 20:32:25</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>05/22/2015 17:24:56</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

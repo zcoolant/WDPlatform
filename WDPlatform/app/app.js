@@ -7,9 +7,5 @@
 		'services.hub', // Dependency on the SignalR Hub Service module
         'ngMaterial',
         'gajus.swing'
-        
 	]);
-	angular.config(function ($mdIconProvider) {
-	    $mdIconProvider.iconSet("avatar", 'icons/avatar-icons.svg', 128);
-	});
 })(window.angular);
